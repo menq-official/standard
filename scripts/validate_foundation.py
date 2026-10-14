@@ -158,6 +158,8 @@ REQUIRED_WORKFLOW_RUNS = {
         ),
     },
     "foundation-integrity.yml": {"validate": ("scripts/validate_foundation.py",)},
+    # One commit identity (MenQ <office@menqstudio.am>) on every pull request; it runs git, not python.
+    "identity-guard.yml": {"identity": ()},
     "foundation-v1-package.yml": {"package": ("scripts/validate_foundation.py",)},
     "markdown-inventory-bootstrap.yml": {
         "validate": (

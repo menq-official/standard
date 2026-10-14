@@ -84,6 +84,9 @@
     "docs": [
       "platforms/design/repository-front/README.md"
     ],
+    "docs/migration": [
+      "docs/migration/README.md"
+    ],
     "foundation": [
       "foundation/FOUNDATION_NORMATIVE_METADATA_REGISTRY.md",
       "foundation/FOUNDATION_V1_INTEGRITY_AUDIT.md",

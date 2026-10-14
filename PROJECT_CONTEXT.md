@@ -3,7 +3,7 @@
 **Status / Կարգավիճակ:** Active / Գործող  
 **Document class / Փաստաթղթի դաս:** Informative  
 **Owner / Պատասխանատու:** Gevorg Ohanyan  
-**Canonical repository:** `https://github.com/menqstudio/MenQ-Standard`  
+**Canonical repository:** `https://github.com/menq-official/standard`  
 **Last synchronized / Վերջին համաժամեցում:** 2026-10-09
 
 ## Հայերեն

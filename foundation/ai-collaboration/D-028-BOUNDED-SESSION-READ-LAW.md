@@ -1,7 +1,7 @@
 # D-028 — Bounded Session Read Law / Սահմանափակ session-ի ընթերցման օրենք
 
 **Decision ID:** `D-028`  
-**Status / Կարգավիճակ:** Approved — the Owner merged pull request #29 on 2026-10-09 (merge commit `ed91149`); not `Locked` / Approved — Owner-ը merge է արել pull request #29-ը 2026-10-09-ին (merge commit `ed91149`). `Locked` չէ  
+**Status / Կարգավիճակ:** Approved — the Owner merged pull request #29 on 2026-10-09 (merge commit `2bbd483`); not `Locked` / Approved — Owner-ը merge է արել pull request #29-ը 2026-10-09-ին (merge commit `2bbd483`). `Locked` չէ  
 **Date / Ամսաթիվ:** 2026-10-09  
 **Decision class / Որոշման դաս:** `C4 — Foundation or Ecosystem`  
 **Risk level / Ռիսկի մակարդակ:** `R2 — Moderate`  
@@ -15,9 +15,9 @@
 
 ## Problem / Խնդիր
 
-**HY:** D-026-ը (Locked) պահանջում է, որ յուրաքանչյուր AI session մինչև որևէ աշխատանք ամբողջությամբ կարդա repository-ի բոլոր tracked `.md` ֆայլերը, և արգելում է token կամ context limit-ը որպես չկարդալու պատճառ։ `c61608a` head-ում դա 133 Markdown ֆայլ է՝ 684,725 բայթ, առանց վերին սահմանի․ միայն brand-expression-ի 35 component README-ները 38,814 բայթ են, և յուրաքանչյուր նոր component ավելացնում է ևս մեկը։ Owner-ի գնահատմամբ՝ ոչ մի session չի կարող դա կատարել։ Ոչ մի ծրագիր չի ստուգում, որ session-ը որևէ բան կարդացել է․ միակ մեքենայական ստուգումը այն է, որ `MARKDOWN_INVENTORY.json`-ը համապատասխանում է tracked ֆայլերին։ Չնայած դրան՝ հինգ փաստաթուղթ (`README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md`) D-026-ը անվանում էր «machine-enforced»։ Կանոնը, որը հնարավոր չէ կատարել և հնարավոր չէ ստուգել, session-ին սովորեցնում է հայտարարել GREEN առանց հիմքի։
+**HY:** D-026-ը (Locked) պահանջում է, որ յուրաքանչյուր AI session մինչև որևէ աշխատանք ամբողջությամբ կարդա repository-ի բոլոր tracked `.md` ֆայլերը, և արգելում է token կամ context limit-ը որպես չկարդալու պատճառ։ `c4f50c3` head-ում դա 133 Markdown ֆայլ է՝ 684,725 բայթ, առանց վերին սահմանի․ միայն brand-expression-ի 35 component README-ները 38,814 բայթ են, և յուրաքանչյուր նոր component ավելացնում է ևս մեկը։ Owner-ի գնահատմամբ՝ ոչ մի session չի կարող դա կատարել։ Ոչ մի ծրագիր չի ստուգում, որ session-ը որևէ բան կարդացել է․ միակ մեքենայական ստուգումը այն է, որ `MARKDOWN_INVENTORY.json`-ը համապատասխանում է tracked ֆայլերին։ Չնայած դրան՝ հինգ փաստաթուղթ (`README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md`) D-026-ը անվանում էր «machine-enforced»։ Կանոնը, որը հնարավոր չէ կատարել և հնարավոր չէ ստուգել, session-ին սովորեցնում է հայտարարել GREEN առանց հիմքի։
 
-**EN:** D-026 (Locked) requires every AI session to read every tracked `.md` file of the repository in full before any work, and forbids a token or context limit as a reason not to. At head `c61608a` that is 133 Markdown files and 684,725 bytes, with no upper bound: the 35 component READMEs of brand-expression alone are 38,814 bytes, and every new component adds one more. In the Owner's assessment, no session can satisfy it. No program checks that a session read anything: the only machine check is that `MARKDOWN_INVENTORY.json` matches the tracked files. Despite that, five documents (`README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md`) called D-026 “machine-enforced”. A rule that cannot be satisfied and cannot be checked teaches a session to declare GREEN without grounds.
+**EN:** D-026 (Locked) requires every AI session to read every tracked `.md` file of the repository in full before any work, and forbids a token or context limit as a reason not to. At head `c4f50c3` that is 133 Markdown files and 684,725 bytes, with no upper bound: the 35 component READMEs of brand-expression alone are 38,814 bytes, and every new component adds one more. In the Owner's assessment, no session can satisfy it. No program checks that a session read anything: the only machine check is that `MARKDOWN_INVENTORY.json` matches the tracked files. Despite that, five documents (`README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md`) called D-026 “machine-enforced”. A rule that cannot be satisfied and cannot be checked teaches a session to declare GREEN without grounds.
 
 ## Context / Կոնտեքստ
 
@@ -105,9 +105,9 @@
 
 ## Expected outcome and KPI / Ակնկալվող արդյունք և KPI
 
-**HY:** Յուրաքանչյուր session կարող է իրականում կատարել մեկնարկային ընթերցումը, և փաստաթղթերը ընթերցման մասին պնդում են միայն այն, ինչ ստուգվում է։ Baseline՝ 684,725 բայթ պարտադիր ընթերցում, առանց սահմանի (`c61608a`)։ KPI և target՝ core-ը ≤ 120,000 բայթ, 0 orphan tracked Markdown ֆայլ, gate-ը GREEN յուրաքանչյուր pull request-ում, 0 փաստաթուղթ, որը ընթերցումը անվանում է մեքենայով ստուգվող։ Owner՝ MenQ Owner։ Չափման հաճախականություն՝ CI-ի յուրաքանչյուր run։ Այս draft-ում չափված core-ը 10 ֆայլ է, 107,705 բայթ, per-file սահմանների գումարը՝ 113,120։
+**HY:** Յուրաքանչյուր session կարող է իրականում կատարել մեկնարկային ընթերցումը, և փաստաթղթերը ընթերցման մասին պնդում են միայն այն, ինչ ստուգվում է։ Baseline՝ 684,725 բայթ պարտադիր ընթերցում, առանց սահմանի (`c4f50c3`)։ KPI և target՝ core-ը ≤ 120,000 բայթ, 0 orphan tracked Markdown ֆայլ, gate-ը GREEN յուրաքանչյուր pull request-ում, 0 փաստաթուղթ, որը ընթերցումը անվանում է մեքենայով ստուգվող։ Owner՝ MenQ Owner։ Չափման հաճախականություն՝ CI-ի յուրաքանչյուր run։ Այս draft-ում չափված core-ը 10 ֆայլ է, 107,705 բայթ, per-file սահմանների գումարը՝ 113,120։
 
-**EN:** Every session can actually perform the startup read, and the documents claim about the read only what is checked. Baseline: 684,725 bytes of mandatory read with no bound (`c61608a`). KPI and target: the core is ≤ 120,000 bytes, 0 orphan tracked Markdown files, the gate is GREEN on every pull request, 0 documents that call the read machine-checked. Owner: MenQ Owner. Measurement cadence: every CI run. The core measured in this draft is 10 files and 107,705 bytes, and the sum of the per-file ceilings is 113,120.
+**EN:** Every session can actually perform the startup read, and the documents claim about the read only what is checked. Baseline: 684,725 bytes of mandatory read with no bound (`c4f50c3`). KPI and target: the core is ≤ 120,000 bytes, 0 orphan tracked Markdown files, the gate is GREEN on every pull request, 0 documents that call the read machine-checked. Owner: MenQ Owner. Measurement cadence: every CI run. The core measured in this draft is 10 files and 107,705 bytes, and the sum of the per-file ceilings is 113,120.
 
 ## Risks and mitigations / Ռիսկեր և մեղմացում
 
@@ -176,16 +176,16 @@
 
 **HY:**
 
-- Չափումներ `c61608a` head-ում, 2026-10-09-ին․ `git ls-files -z '*.md' | tr '\0' '\n' | grep -c .` → 133․ `git ls-files -z '*.md' | xargs -0 cat | wc -c` → 684,725․ նույնը միայն `brand-expression/components/` path-երի համար → 35 ֆայլ, 38,814 բայթ։
-- «machine-enforced» բառը `c61608a`-ում D-026-ի մասին՝ `README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md` (`grep -rn "machine-enforced"`)։
+- Չափումներ `c4f50c3` head-ում, 2026-10-09-ին․ `git ls-files -z '*.md' | tr '\0' '\n' | grep -c .` → 133․ `git ls-files -z '*.md' | xargs -0 cat | wc -c` → 684,725․ նույնը միայն `brand-expression/components/` path-երի համար → 35 ֆայլ, 38,814 բայթ։
+- «machine-enforced» բառը `c4f50c3`-ում D-026-ի մասին՝ `README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md` (`grep -rn "machine-enforced"`)։
 - `scripts/validate_foundation.py`-ի ընթերցում՝ D-026-ի համար այն ստուգում է inventory-ի path, size և SHA drift-ը և մի քանի փաստաթղթում reference տողերի առկայությունը․ session-ի ընթերցումը ոչինչ չի գրանցում և չի ստուգում։
 - Core-ի չափումը այս draft-ում՝ `python3 scripts/check_session_read_budget.py` → 10 ֆայլ, 107,705 բայթ 120,000-ից։
 - Owner-ի երկու որոշումները project conversation-ում՝ 2026-10-09-ին։ Conversation-ը canonical source չէ, և այս տեքստի հաստատումը pull request-ի merge-ն է։
 
 **EN:**
 
-- Measurements at head `c61608a` on 2026-10-09: `git ls-files -z '*.md' | tr '\0' '\n' | grep -c .` → 133; `git ls-files -z '*.md' | xargs -0 cat | wc -c` → 684,725; the same restricted to `brand-expression/components/` paths → 35 files, 38,814 bytes.
-- The word “machine-enforced” about D-026 at `c61608a`: `README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md` (`grep -rn "machine-enforced"`).
+- Measurements at head `c4f50c3` on 2026-10-09: `git ls-files -z '*.md' | tr '\0' '\n' | grep -c .` → 133; `git ls-files -z '*.md' | xargs -0 cat | wc -c` → 684,725; the same restricted to `brand-expression/components/` paths → 35 files, 38,814 bytes.
+- The word “machine-enforced” about D-026 at `c4f50c3`: `README.md`, `PROJECT_CONTEXT.md`, `AI_WORKING_CONTEXT.md`, `NEXT_CHAT_HANDOFF.md`, `platforms/design/PROJECT_CONTEXT.md` (`grep -rn "machine-enforced"`).
 - A reading of `scripts/validate_foundation.py`: for D-026 it checks the inventory's path, size and SHA drift and the presence of reference strings in several documents; nothing records or checks a session's read.
 - The measurement of the core in this draft: `python3 scripts/check_session_read_budget.py` → 10 files, 107,705 bytes of 120,000.
 - The Owner's two decisions in the project conversation on 2026-10-09. Conversation is not the canonical source, and the approval of this text is the merge of the pull request.

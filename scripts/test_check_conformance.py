@@ -237,7 +237,7 @@ class GreenControls(Case):
     def test_adopted_repository_is_green_against_the_standard(self) -> None:
         product = self.world()
         out = self.assert_green(product)
-        self.assertIn(f"pin: menqstudio/MenQ-Standard 2.0.0 @ {product.std.head}", out)
+        self.assertIn(f"pin: menq-official/standard 2.0.0 @ {product.std.head}", out)
         self.assertIn("kit: 9 files in menq-standard/ match the pin, and nothing else is there", out)
         self.assertIn("session read: SESSION_READ_MANIFEST.json: core: 1 files", out)
         self.assertIn("sync_facts: NOT CONFIGURED", out)
@@ -292,7 +292,7 @@ class PinShape(Case):
             "schema version": (lambda p: p.update(schema_version=2), "pin is malformed: schema_version is 2, expected 1"),
             "standard not an object": (lambda p: p.update(standard="x"), "standard must be an object with exactly repository, version and commit"),
             "standard extra key": (lambda p: p["standard"].update(tag="v2"), "standard must be an object with exactly repository, version and commit"),
-            "another repository": (lambda p: p["standard"].update(repository="someone/Fork"), "standard.repository is 'someone/Fork', expected 'menqstudio/MenQ-Standard'"),
+            "another repository": (lambda p: p["standard"].update(repository="someone/Fork"), "standard.repository is 'someone/Fork', expected 'menq-official/standard'"),
             "version two parts": (lambda p: p["standard"].update(version="2.0"), "standard.version '2.0' is not MAJOR.MINOR.PATCH"),
             "version leading zero": (lambda p: p["standard"].update(version="2.00.0"), "standard.version '2.00.0' is not MAJOR.MINOR.PATCH"),
             "version not text": (lambda p: p["standard"].update(version=2), "standard.version 2 is not MAJOR.MINOR.PATCH"),
@@ -989,7 +989,7 @@ class UpdateTemplateAsShell(Case):
         runner.mkdir()
         tree = vf.parse_workflow_yaml(product.read(UPDATE).decode("utf-8"))
         steps = tree["jobs"]["update"]["steps"]
-        self.assertEqual(steps[2]["run"], 'git clone --quiet https://github.com/menqstudio/MenQ-Standard.git "$RUNNER_TEMP/menq-standard"')
+        self.assertEqual(steps[2]["run"], 'git clone --quiet https://github.com/menq-official/standard.git "$RUNNER_TEMP/menq-standard"')
         environment = dict(os.environ, PATH=f"{tools}{os.pathsep}{os.environ['PATH']}", RUNNER_TEMP=str(runner), GH_LOG=str(root / "gh.log"))
         return product, root, environment, steps[3]["run"]
 

@@ -24,7 +24,7 @@
   "evidencePlan": "Design Governance workflow GREEN; negative tests for unowned assets, missing approvals, self-approval and an unlinked PR.",
   "targetRelease": "none (governance tooling)",
   "pullRequests": [16, 17],
-  "closure": {"date": "2026-10-07", "evidence": ["PR #16 merged at 4ee07be with all 8 CI checks GREEN, including the Design Governance PR gate", "Owner lock approval in the project conversation on 2026-10-07", "PR #17 records the lock and closes this change request"]}
+  "closure": {"date": "2026-10-07", "evidence": ["PR #16 merged at e83416d with all 8 CI checks GREEN, including the Design Governance PR gate", "Owner lock approval in the project conversation on 2026-10-07", "PR #17 records the lock and closes this change request"]}
 }
 ```
 

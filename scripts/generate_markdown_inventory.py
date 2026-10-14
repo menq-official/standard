@@ -58,7 +58,7 @@ def build_manifest() -> dict[str, object]:
             raise Refusal(f"cannot read tracked Markdown file {rel}: {exc.strerror or exc}") from exc
     return {
         "schema_version": SCHEMA_VERSION,
-        "repository": "menqstudio/MenQ-Standard",
+        "repository": "menq-official/standard",
         "source": SOURCE,
         "file_count": len(files),
         "files": files,

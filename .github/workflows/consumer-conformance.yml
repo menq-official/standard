@@ -5,7 +5,7 @@ name: Consumer Conformance
 #
 #   jobs:
 #     conformance:
-#       uses: menqstudio/MenQ-Standard/.github/workflows/consumer-conformance.yml@<40-hex SHA>
+#       uses: menq-official/standard/.github/workflows/consumer-conformance.yml@<40-hex SHA>
 #
 # It checks out the standard, checks out the calling repository beside it, moves the standard to
 # the commit the caller's pin names (only when that commit is on main), and runs the STANDARD's
@@ -27,7 +27,7 @@ jobs:
       - name: Check out MenQ Standard with full history
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          repository: menqstudio/MenQ-Standard
+          repository: menq-official/standard
           ref: main
           fetch-depth: 0
           persist-credentials: false

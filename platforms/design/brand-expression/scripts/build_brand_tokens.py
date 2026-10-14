@@ -145,7 +145,7 @@ def build_mirror(source: dict) -> str:
         "motion": group(lambda t: t["type"] in ("duration", "cubic-bezier") or css(t).startswith("motion-")),
         "zIndex": group(lambda t: css(t).startswith("z-")),
         "opacity": group(lambda t: css(t).startswith("opacity-")),
-        "meta": {"source": "github", "repo": "menqstudio/MenQ-Standard", "path": "platforms/design/brand-expression/source/brand-tokens.source.json", "decision": "D-027"},
+        "meta": {"source": "github", "repo": "menq-official/standard", "path": "platforms/design/brand-expression/source/brand-tokens.source.json", "decision": "D-027"},
     }
     del families
     groups: dict[str, list] = {}

@@ -131,7 +131,7 @@ DESIGN_ROADMAP = "platforms/design/ROADMAP.md"
 CHARTER = "platforms/design/PLATFORM_CHARTER.md"
 LOCK = "platforms/design/D-025_LOCK_RECORD.md"
 CLOSURE = "platforms/design/D-025_POST_MERGE_CLOSURE_RECORD.md"
-URL = "https://github.com/menqstudio/MenQ-Standard/releases/tag/"
+URL = "https://github.com/menq-official/standard/releases/tag/"
 
 
 def record(*assignments: tuple[str, object]):

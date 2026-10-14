@@ -46,7 +46,7 @@
     "Foundation v1 and the D-025 Design Platform are Locked; the D-027 brand layer is active (see Status below)"
    ],
    [
-    "Built with",
+    "Stack",
     "Markdown and JSON specifications, Python validators, GitHub Actions"
    ]
   ],
@@ -64,7 +64,7 @@
     "Foundation v1-ը և D-025 Design Platform-ը Locked են. D-027 բրենդի շերտը գործում է (տես ներքևի Status-ը)"
    ],
    [
-    "Կառուցված է",
+    "Տեխնոլոգիաներ",
     "Markdown և JSON սպեցիֆիկացիաներ, Python ստուգիչներ, GitHub Actions"
    ]
   ]

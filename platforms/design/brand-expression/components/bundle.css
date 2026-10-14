@@ -1,6 +1,6 @@
 /* MenQ brand expression (D-027) — core component stylesheet. Every value resolves through tokens.css.
-   Patterns from menqstudio/Webpage@d985a57 (design-v2.css, sections.css, ui/*.tsx);
-   app components extended from BroPS@05754bd. */
+   Patterns from menq-official/webpage@56c991b (design-v2.css, sections.css, ui/*.tsx);
+   app components extended from BroPS@8a11ebb. */
 
 /* Derived expressions only (computed from tokens, re-evaluated in every theme scope). Raw values live in tokens.css. */
 :root, [data-theme], .section-contrast {

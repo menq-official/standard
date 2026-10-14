@@ -20,7 +20,7 @@
   "evidencePlan": "Brand expression validator GREEN (asset sha256, bundle syntax, components, var resolution); rendered comparison against the official logo.",
   "targetRelease": "none (brand expression layer)",
   "pullRequests": [21, 22],
-  "mergeEvidence": ["PR #21 merged at 51728c9 on 2026-10-08 00:48 +04:00 (2026-10-07 20:48 UTC)", "PR #22 (Q-mark viewBox fix) merged at c98e5d5 on 2026-10-08 00:52 +04:00 (2026-10-07 20:52 UTC)"],
+  "mergeEvidence": ["PR #21 merged at 40b2da8 on 2026-10-08 00:48 +04:00 (2026-10-07 20:48 UTC)", "PR #22 (Q-mark viewBox fix) merged at 6a8017d on 2026-10-08 00:52 +04:00 (2026-10-07 20:52 UTC)"],
   "closure": null,
   "closureBlockedBy": ["consumerEvidencePlan (required for class contract-extension): nothing in this repository shows that MenQ Webpage replaced its BrandMark in a follow-up pull request with CI runtime evidence", "consumerEvidencePlan: the claude.ai Design System mirror update cannot be seen from this repository", "evidencePlan: no record of the rendered comparison against the official logo is in the repository", "synchronization: brand-expression/components/Cover/preview.html still draws the replaced mark (an azure disc with a power symbol)"]
 }
@@ -50,7 +50,7 @@ PNG լոգոն օգտագործել ամենուր՝ մերժվեց, քանի ո
 
 ### Փակման վիճակ (2026-10-09, CR-0012)
 
-Բաց է։ Աշխատանքը merge է եղել (PR #21՝ `51728c9`, PR #22՝ `c98e5d5`), և `validate_brand_expression.py`-ը GREEN է (2026-10-09)։ Փակմանը խանգարում է. (1) repository-ում չկա ապացույց, որ MenQ Webpage-ը փոխել է իր BrandMark-ը հաջորդ PR-ով՝ CI runtime evidence-ով, (2) claude.ai Design System mirror-ի թարմացումը repository-ից չի երևում, (3) պաշտոնական լոգոյի հետ rendered համեմատության գրառում չկա, (4) `components/Cover/preview.html`-ը դեռ նկարում է փոխարինված նշանը (ազուր շրջան power նշանով)։
+Բաց է։ Աշխատանքը merge է եղել (PR #21՝ `40b2da8`, PR #22՝ `6a8017d`), և `validate_brand_expression.py`-ը GREEN է (2026-10-09)։ Փակմանը խանգարում է. (1) repository-ում չկա ապացույց, որ MenQ Webpage-ը փոխել է իր BrandMark-ը հաջորդ PR-ով՝ CI runtime evidence-ով, (2) claude.ai Design System mirror-ի թարմացումը repository-ից չի երևում, (3) պաշտոնական լոգոյի հետ rendered համեմատության գրառում չկա, (4) `components/Cover/preview.html`-ը դեռ նկարում է փոխարինված նշանը (ազուր շրջան power նշանով)։
 
 ## English
 
@@ -76,6 +76,6 @@ File names are kept. Rollback: revert the PR.
 
 ### Closure status (2026-10-09, CR-0012)
 
-Open. The work is merged (PR #21 at `51728c9`, PR #22 at `c98e5d5`) and `validate_brand_expression.py` is GREEN (2026-10-09). Closure is blocked by: (1) nothing in the repository shows that MenQ Webpage replaced its BrandMark in a follow-up pull request with CI runtime evidence; (2) the claude.ai Design System mirror update cannot be seen from the repository; (3) there is no record of the rendered comparison against the official logo; (4) `components/Cover/preview.html` still draws the replaced mark (an azure disc with a power symbol).
+Open. The work is merged (PR #21 at `40b2da8`, PR #22 at `6a8017d`) and `validate_brand_expression.py` is GREEN (2026-10-09). Closure is blocked by: (1) nothing in the repository shows that MenQ Webpage replaced its BrandMark in a follow-up pull request with CI runtime evidence; (2) the claude.ai Design System mirror update cannot be seen from the repository; (3) there is no record of the rendered comparison against the official logo; (4) `components/Cover/preview.html` still draws the replaced mark (an azure disc with a power symbol).
 
 <!-- END: CR-0005 -->

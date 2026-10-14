@@ -20,9 +20,9 @@
   "evidencePlan": "Brand generator --check and brand expression validator GREEN; Webpage axe GREEN for color-contrast.",
   "targetRelease": "none (brand expression layer)",
   "pullRequests": [23],
-  "mergeEvidence": ["PR #23 merged at 3eb4af2 on 2026-10-08 01:05 +04:00 (2026-10-07 21:05 UTC)"],
+  "mergeEvidence": ["PR #23 merged at b49a0a4 on 2026-10-08 01:05 +04:00 (2026-10-07 21:05 UTC)"],
   "closure": null,
-  "closureBlockedBy": ["evidencePlan and consumerEvidencePlan: nothing in this repository shows that MenQ Webpage re-pinned tokens.vars.css after 3eb4af2, or a Webpage axe run with zero color-contrast findings in the light theme; the only Webpage axe result recorded here (d-025-readiness-record.json, 2026-10-08) is at pin 493a3df, before this change, with 7 serious color-contrast findings", "open defect found on 2026-10-09 (CR-0012): the primary Button renders white text on gradient-brand (color-action-primary to color-accent); in the light theme the cyan end #06b6d4 gives 2.43:1, so the Button does not meet the rule 'white text only on color-action-primary'; validate_brand_expression.py does not check gradient-brand", "pointer added on 2026-10-09: the fix for the primary Button item above is proposed in CR-0013 (status proposed; it takes effect when the Owner merges its pull request); this item stays listed until then, and CR-0006 stays open"]
+  "closureBlockedBy": ["evidencePlan and consumerEvidencePlan: nothing in this repository shows that MenQ Webpage re-pinned tokens.vars.css after b49a0a4, or a Webpage axe run with zero color-contrast findings in the light theme; the only Webpage axe result recorded here (d-025-readiness-record.json, 2026-10-08) is at pin bfd0219, before this change, with 7 serious color-contrast findings", "open defect found on 2026-10-09 (CR-0012): the primary Button renders white text on gradient-brand (color-action-primary to color-accent); in the light theme the cyan end #06b6d4 gives 2.43:1, so the Button does not meet the rule 'white text only on color-action-primary'; validate_brand_expression.py does not check gradient-brand", "pointer added on 2026-10-09: the fix for the primary Button item above is proposed in CR-0013 (status proposed; it takes effect when the Owner merges its pull request); this item stays listed until then, and CR-0006 stays open"]
 }
 ```
 
@@ -50,7 +50,7 @@ API-ն չի փոխվում։ Consumer-ները re-pin են անում generated 
 
 ### Փակման վիճակ (2026-10-09, CR-0012)
 
-Բաց է։ Աշխատանքը merge է եղել (PR #23՝ `3eb4af2`), generator-ի `--check`-ը և `validate_brand_expression.py`-ը GREEN են (2026-10-09)։ Փակմանը խանգարում է. (1) repository-ում չկա ապացույց, որ MenQ Webpage-ը re-pin է արել `tokens.vars.css`-ը `3eb4af2`-ից հետո, կամ որ նրա axe ստուգումը light theme-ում զրո color-contrast գտածո է տվել. այստեղ գրանցված միակ Webpage axe արդյունքը (`d-025-readiness-record.json`, 2026-10-08) `493a3df` pin-ի վրա է՝ այս փոփոխությունից առաջ, 7 serious color-contrast գտածոյով, (2) 2026-10-09-ին գտնված բաց թերություն. հիմնական Button-ը սպիտակ տեքստը դնում է `gradient-brand`-ի վրա (`color-action-primary` → `color-accent`), և light theme-ում cyan ծայրը (`#06b6d4`) տալիս է 2.43:1. validator-ը `gradient-brand`-ը չի ստուգում։
+Բաց է։ Աշխատանքը merge է եղել (PR #23՝ `b49a0a4`), generator-ի `--check`-ը և `validate_brand_expression.py`-ը GREEN են (2026-10-09)։ Փակմանը խանգարում է. (1) repository-ում չկա ապացույց, որ MenQ Webpage-ը re-pin է արել `tokens.vars.css`-ը `b49a0a4`-ից հետո, կամ որ նրա axe ստուգումը light theme-ում զրո color-contrast գտածո է տվել. այստեղ գրանցված միակ Webpage axe արդյունքը (`d-025-readiness-record.json`, 2026-10-08) `bfd0219` pin-ի վրա է՝ այս փոփոխությունից առաջ, 7 serious color-contrast գտածոյով, (2) 2026-10-09-ին գտնված բաց թերություն. հիմնական Button-ը սպիտակ տեքստը դնում է `gradient-brand`-ի վրա (`color-action-primary` → `color-accent`), և light theme-ում cyan ծայրը (`#06b6d4`) տալիս է 2.43:1. validator-ը `gradient-brand`-ը չի ստուգում։
 
 ## English
 
@@ -76,6 +76,6 @@ No API change. Consumers re-pin the generated file. Rollback: revert the PR.
 
 ### Closure status (2026-10-09, CR-0012)
 
-Open. The work is merged (PR #23 at `3eb4af2`); the generator `--check` and `validate_brand_expression.py` are GREEN (2026-10-09). Closure is blocked by: (1) nothing in the repository shows that MenQ Webpage re-pinned `tokens.vars.css` after `3eb4af2`, or that its axe run reported zero color-contrast findings in the light theme; the only Webpage axe result recorded here (`d-025-readiness-record.json`, 2026-10-08) is at pin `493a3df`, before this change, with 7 serious color-contrast findings; (2) an open defect found on 2026-10-09: the primary Button puts white text on `gradient-brand` (`color-action-primary` → `color-accent`), and in the light theme the cyan end (`#06b6d4`) gives 2.43:1; the validator does not check `gradient-brand`.
+Open. The work is merged (PR #23 at `b49a0a4`); the generator `--check` and `validate_brand_expression.py` are GREEN (2026-10-09). Closure is blocked by: (1) nothing in the repository shows that MenQ Webpage re-pinned `tokens.vars.css` after `b49a0a4`, or that its axe run reported zero color-contrast findings in the light theme; the only Webpage axe result recorded here (`d-025-readiness-record.json`, 2026-10-08) is at pin `bfd0219`, before this change, with 7 serious color-contrast findings; (2) an open defect found on 2026-10-09: the primary Button puts white text on `gradient-brand` (`color-action-primary` → `color-accent`), and in the light theme the cyan end (`#06b6d4`) gives 2.43:1; the validator does not check `gradient-brand`.
 
 <!-- END: CR-0006 -->

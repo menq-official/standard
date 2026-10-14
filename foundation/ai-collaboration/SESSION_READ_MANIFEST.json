@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "repository": "menqstudio/MenQ-Standard",
+  "repository": "menq-official/standard",
   "decision": "D-028",
   "law": "foundation/ai-collaboration/CANONICAL_SESSION_READ_LAW.md",
   "gate": "scripts/check_session_read_budget.py",

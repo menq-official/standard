@@ -4,7 +4,7 @@
     python make_front.py <repo>/docs/assets/front/front.json --check    exit 1 when they differ from the config
 
 The same config also holds the README front block: "start" (the documents a reader opens first) and "facts"
-(What it is / Who it serves / State / Built with, in English and Armenian). The block is written into README.md
+(What it is / Who it serves / State / Stack, in English and Armenian). The block is written into README.md
 between <!-- FRONT:START --> and <!-- FRONT:END --> (top of the file); everything after it stays as it was.
 Every linked path must exist in the repository, or the script stops.
 

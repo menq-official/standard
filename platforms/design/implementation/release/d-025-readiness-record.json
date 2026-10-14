@@ -108,7 +108,7 @@
       "expiredArtifactId": 8265108086,
       "permanentRelease": {
         "tag": "design-platform-v0.1.0-next.0",
-        "url": "https://github.com/menqstudio/MenQ-Standard/releases/tag/design-platform-v0.1.0-next.0",
+        "url": "https://github.com/menq-official/standard/releases/tag/design-platform-v0.1.0-next.0",
         "sourceCommit": "3793b3ce01a98db051894917595624881972adad",
         "asset": "menq-design-platform-0.1.0-next.0.zip",
         "assetSha256": "396653856650dc2ec50af230e851e4c90f4215606be1cbec999a3b5d4a83e486",

@@ -6,7 +6,7 @@
 **Status / Կարգավիճակ:** Active / Գործող  
 **Document class / Փաստաթղթի դաս:** Working  
 **Last synchronized / Վերջին համաժամեցում:** 2026-10-09  
-**Canonical repository:** `https://github.com/menqstudio/MenQ-Standard`
+**Canonical repository:** `https://github.com/menq-official/standard`
 
 ## Հայերեն
 

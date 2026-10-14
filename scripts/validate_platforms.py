@@ -146,7 +146,7 @@ CURRENT_FIELDS = (
 CONFUSED = "D-025 readiness record confuses the 2026-07-13 snapshot with the current block: "
 ISO_DATE = re.compile(r"\d{4}-\d{2}-\d{2}")
 MATURITY_LEVELS = ("M0", "M1", "M2", "M3", "M4")
-RELEASE_URL_BASE = "https://github.com/menqstudio/MenQ-Standard/releases/tag/"
+RELEASE_URL_BASE = "https://github.com/menq-official/standard/releases/tag/"
 REAL_CONSUMER = re.compile(r"^menqstudio/[A-Za-z0-9._-]+$")
 
 ARMENIAN = re.compile(r"[Ա-֏]")

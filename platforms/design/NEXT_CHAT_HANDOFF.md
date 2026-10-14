@@ -3,7 +3,7 @@
 **Status / Կարգավիճակ:** Current / Ընթացիկ  
 **Prepared / Պատրաստվել է:** 2026-10-09 (`CR-0012`, `CR-0013`)  
 **Owner / Պատասխանատու:** Gevorg Ohanyan  
-**Repository:** `https://github.com/menqstudio/MenQ-Standard`  
+**Repository:** `https://github.com/menq-official/standard`  
 **Canonical ref:** `main`
 
 ## Հայերեն
@@ -16,7 +16,7 @@
 
 **Locked**
 
-- D-025 architecture-ը `Locked` է 2026-07-13-ից՝ Owner-ի որոշմամբ։ Implementation merge — `2682c99cdcbb058b66ab0cd4ee82d923e5c2a7cc`, closure merge — `9a833339b1d707d6cd8a792e031dd8ca2857d556`, lock merge — `261f85e5b20d726a0ab1f05da84a4dc45a248873`, validated lock head — `8ba2e987ff6dab2c25fda18744c7376953d0108f`։
+- D-025 architecture-ը `Locked` է 2026-07-13-ից՝ Owner-ի որոշմամբ։ Implementation merge — `32ddc2191bf50f78c4bef13a4b8b06cafc8e35a2`, closure merge — `a9932dc1b982982e144e8addd3f7fabe37e220d4`, lock merge — `c477d6bca049617e0d9df703ad5791a047e2b0da`, validated lock head — `67fad5b119e8cc48b808778c7513ee28a631ca8d`։
 - Part 14 governance-ի implementation-ը `Locked` է 2026-10-07-ից ([`governance/`](governance/README.md))։
 
 **Ուղղված**
@@ -67,7 +67,7 @@ Before substantive work, read in full, on the active branch/ref, the session-rea
 
 **Locked**
 
-- The D-025 architecture has been `Locked` since 2026-07-13 by Owner decision. Implementation merge: `2682c99cdcbb058b66ab0cd4ee82d923e5c2a7cc`; closure merge: `9a833339b1d707d6cd8a792e031dd8ca2857d556`; lock merge: `261f85e5b20d726a0ab1f05da84a4dc45a248873`; validated lock head: `8ba2e987ff6dab2c25fda18744c7376953d0108f`.
+- The D-025 architecture has been `Locked` since 2026-07-13 by Owner decision. Implementation merge: `32ddc2191bf50f78c4bef13a4b8b06cafc8e35a2`; closure merge: `a9932dc1b982982e144e8addd3f7fabe37e220d4`; lock merge: `c477d6bca049617e0d9df703ad5791a047e2b0da`; validated lock head: `67fad5b119e8cc48b808778c7513ee28a631ca8d`.
 - The Part 14 governance implementation has been `Locked` since 2026-10-07 ([`governance/`](governance/README.md)).
 
 **Corrected**

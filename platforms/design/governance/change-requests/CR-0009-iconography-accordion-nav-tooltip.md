@@ -20,7 +20,7 @@
   "evidencePlan": "Brand expression validator GREEN; Chromium test: accordion aria-expanded toggles, tooltip opens on focus with aria-describedby and closes on Escape; axe 0 violations light and dark.",
   "targetRelease": "none (brand expression layer)",
   "pullRequests": [26],
-  "mergeEvidence": ["PR #26 merged at 79b5abc on 2026-10-08 01:34 +04:00 (2026-10-07 21:34 UTC)"],
+  "mergeEvidence": ["PR #26 merged at ecfaa87 on 2026-10-08 01:34 +04:00 (2026-10-07 21:34 UTC)"],
   "closure": null,
   "closureBlockedBy": ["evidencePlan: no Chromium interaction test result (accordion aria-expanded, tooltip focus, aria-describedby and Escape) and no axe result is recorded in this repository", "consumerEvidencePlan (required for class contract-extension): the same rendered interaction tests and axe runs in both themes are not recorded"]
 }
@@ -50,7 +50,7 @@ Native `details`/`summary` Accordion-ի համար՝ մերժվեց, քանի ո
 
 ### Փակման վիճակ (2026-10-09, CR-0012)
 
-Բաց է։ Աշխատանքը merge է եղել (PR #26՝ `79b5abc`), և `validate_brand_expression.py`-ը GREEN է (2026-10-09)։ Փակմանը խանգարում է. repository-ում գրանցված չէ ոչ Chromium interaction test-ի արդյունք (accordion-ի `aria-expanded`, tooltip-ի focus, `aria-describedby`, Escape), ոչ axe արդյունք՝ երկու թեմայում։
+Բաց է։ Աշխատանքը merge է եղել (PR #26՝ `ecfaa87`), և `validate_brand_expression.py`-ը GREEN է (2026-10-09)։ Փակմանը խանգարում է. repository-ում գրանցված չէ ոչ Chromium interaction test-ի արդյունք (accordion-ի `aria-expanded`, tooltip-ի focus, `aria-describedby`, Escape), ոչ axe արդյունք՝ երկու թեմայում։
 
 ## English
 
@@ -76,6 +76,6 @@ Additions only. Rollback: revert the PR.
 
 ### Closure status (2026-10-09, CR-0012)
 
-Open. The work is merged (PR #26 at `79b5abc`) and `validate_brand_expression.py` is GREEN (2026-10-09). Closure is blocked because no Chromium interaction test result (accordion `aria-expanded`, tooltip focus, `aria-describedby`, Escape) and no axe result in either theme is recorded in the repository.
+Open. The work is merged (PR #26 at `ecfaa87`) and `validate_brand_expression.py` is GREEN (2026-10-09). Closure is blocked because no Chromium interaction test result (accordion `aria-expanded`, tooltip focus, `aria-describedby`, Escape) and no axe result in either theme is recorded in the repository.
 
 <!-- END: CR-0009 -->

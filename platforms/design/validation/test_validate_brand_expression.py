@@ -45,7 +45,7 @@ TREE = (
     VALIDATOR,
 )
 
-# The rules as they stood at 391ff55, before CR-0013.
+# The rules as they stood at 30e1b96, before CR-0013.
 OLD_BUTTON = b".btn--primary { background: var(--gradient-brand); color: var(--color-content-inverse); border-color: transparent; box-shadow: none; }"
 OLD_AVATAR = b".mq-avatar--bro { background: var(--gradient-brand); color: var(--color-content-inverse); box-shadow: var(--shadow-glow); }"
 BUTTON_RULE = re.compile(rb"^\.btn--primary \{[^\n]*\}$", re.M)

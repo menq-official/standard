@@ -3,7 +3,7 @@
 **Status / Կարգավիճակ:** Current / Ընթացիկ  
 **Prepared / Պատրաստվել է:** 2026-10-09  
 **Owner / Պատասխանատու:** Gevorg Ohanyan  
-**Repository:** `https://github.com/menqstudio/MenQ-Standard`  
+**Repository:** `https://github.com/menq-official/standard`  
 **Canonical ref:** `main`
 
 ## Հայերեն

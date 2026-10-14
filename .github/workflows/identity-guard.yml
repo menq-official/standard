@@ -1,0 +1,45 @@
+# MenQ identity guard
+# Every commit in every MenQ repository has exactly one identity:
+#   MenQ <office@menqstudio.am>  (author AND committer)
+# and carries no Co-Authored-By / Signed-off-by trailers.
+# Uses only the GitHub CLI that ships on the runner — no third-party actions.
+
+name: identity-guard
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  identity:
+    name: MenQ identity guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check every commit in the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          violations="$(gh api "repos/$REPO/pulls/$PR/commits" --paginate --jq '
+            .[]
+            | select(
+                .commit.author.name     != "MenQ" or
+                .commit.author.email    != "office@menqstudio.am" or
+                .commit.committer.name  != "MenQ" or
+                .commit.committer.email != "office@menqstudio.am" or
+                (.commit.message | test("(?im)^(co-authored-by|signed-off-by):"))
+              )
+            | "\(.sha[0:7])  author: \(.commit.author.name) <\(.commit.author.email)>  committer: \(.commit.committer.name) <\(.commit.committer.email)>"
+          ')"
+          if [ -n "$violations" ]; then
+            echo "::error::Commits must be authored and committed by 'MenQ <office@menqstudio.am>' with no Co-Authored-By/Signed-off-by trailers."
+            echo "$violations"
+            exit 1
+          fi
+          echo "All commits: MenQ <office@menqstudio.am>, no extra trailers."

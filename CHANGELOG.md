@@ -1,5 +1,19 @@
 # MenQ Standard — Changelog
 
+## 2026-10-15 — The standard moves to the `menq-official` organization (MenQ Standard v2.1.1)
+
+### Հայերեն
+
+- Repository-ն տեղափոխվեց `menq-official` կազմակերպություն՝ `menq-official/standard` անունով։ Consumer kit-ի բոլոր ֆունկցիոնալ հղումները (`consumer/`, reusable workflow, templates, script-եր) այժմ ցույց են տալիս նոր հասցեն։ Կանոններ չեն փոխվել։
+- Պատմությունը վերագրվեց մեկ identity-ի՝ `MenQ <office@menqstudio.am>`, ուստի commit-ների hash-երը փոխվեցին. ֆայլերում հին hash-երի բոլոր հղումները փոխարինվեցին նորերով։ Պատմական գրառումները (decision/evidence/change-request) պահում են հին repository-ների անունները, որովհետև նկարագրում են այն, ինչ եղել է այնտեղ։
+- Տարբերակը `2.1.0`-ից դարձավ `2.1.1` (PATCH)՝ ինտերֆեյսի ֆայլերը փոխվեցին միայն հասցեով։ `consumer/KIT_MANIFEST.json`-ը և Markdown inventory-ն վերագեներացվեցին։
+
+### English
+
+- The repository moved to the `menq-official` organization as `menq-official/standard`. Every functional reference of the consumer kit (`consumer/`, the reusable workflow, the templates, the scripts) now points at the new location. No rule changed.
+- History was rewritten to a single identity, `MenQ <office@menqstudio.am>`, so commit hashes changed; every reference to an old hash inside the files was replaced with the new one. Historical records (decision, evidence and change-request files) keep the old repository names because they describe what happened there.
+- The version went from `2.1.0` to `2.1.1` (PATCH): the interface files changed only by location. `consumer/KIT_MANIFEST.json` and the Markdown inventory were regenerated.
+
 ## 2026-10-10 — The session-read gate repairs `areas` with `--sync-areas` (MenQ Standard v2.1.0)
 
 ### Հայերեն
@@ -78,8 +92,8 @@
 - `scripts/validate_platforms.py`-ը այլևս չի պահանջում հուլիսի արժեքները վերին մակարդակում։ Այն պահանջում է, որ snapshot-ը լինի, ամբողջական լինի և չփոխվի (content hash), և որ նրա maturity-ն հավասար լինի վերջին ուղղման `previousMaturity`-ին։ `current`-ի ամեն դաշտ պետք է հավասար լինի վերջին ուղղմանը։ `current`-ը, որը պնդում է GREEN, `met`, `evidenced` կամ M3 և բարձր առանց ուղղման հիմքի, RED է։ Snapshot-ի և `current`-ի դաշտերի խառնումը RED է՝ անունով։ `KNOWN INCONSISTENCY` տողը այլևս չի տպվում, և վերջին տողերը կարդացվում են `current`-ից։
 - Validator-ից հանվեցին երեք պարտադիր արտահայտությունները, որոնք `platforms/design/ROADMAP.md`-ին ստիպում էին մեջբերել ուղղվածը։ Roadmap-ի տեքստը չի փոխվել։
 - `scripts/test_validate_platforms.py`․ 112 թեստ։ Նոր կամ փոխված յուրաքանչյուր կանոն մեկ անգամ թուլացվեց՝ 42 mutant, բոլորի դեպքում առնվազն մեկ թեստ կարմրեց։
-- `CR-0012`-ի status-ը դարձավ `implementing`, և գրանցվեց մեկ approval, որի evidence-ը Owner-ի կողմից pull request #33-ի merge-ն է (merge commit `391ff55`, 2026-10-09)։ Change request-ը փակված չէ․ այս փոփոխությունը այն ավարտում է և հաստատված է միայն իր pull request-ի merge-ով։ Այս գրառումը հաստատում չի հայտարարում։
-- `DECISIONS.md`-ում `D-009`-ի տակի 2026-10-09-ի նշման վերջին նախադասությունը այժմ գրում է փաստը՝ Owner-ը merge է արել pull request #32-ը (merge commit `b24de94`)։ Նշման մնացած մասը չի փոխվել։ `NEXT_CHAT_HANDOFF.md`-ի 5-րդ կետը թարմացվեց։
+- `CR-0012`-ի status-ը դարձավ `implementing`, և գրանցվեց մեկ approval, որի evidence-ը Owner-ի կողմից pull request #33-ի merge-ն է (merge commit `30e1b96`, 2026-10-09)։ Change request-ը փակված չէ․ այս փոփոխությունը այն ավարտում է և հաստատված է միայն իր pull request-ի merge-ով։ Այս գրառումը հաստատում չի հայտարարում։
+- `DECISIONS.md`-ում `D-009`-ի տակի 2026-10-09-ի նշման վերջին նախադասությունը այժմ գրում է փաստը՝ Owner-ը merge է արել pull request #32-ը (merge commit `b3f60f0`)։ Նշման մնացած մասը չի փոխվել։ `NEXT_CHAT_HANDOFF.md`-ի 5-րդ կետը թարմացվեց։
 - Սահմաններ․ ստուգումները կատարվել են local clone-ում առանց ցանցի, ուստի GitHub-ից ոչինչ չի կարդացվել, և այս փոփոխությունը GitHub Actions-ում դեռ չի գործարկվել։ `ECOSYSTEM_ARCHITECTURE.md`-ը և `NEXT_CHAT_HANDOFF.md`-ի 7-րդ կետը դեռ ասում են, որ `D-009`-ի նշումը հաստատում չունի․ դրանք չեն փոխվել։
 
 ### English
@@ -88,8 +102,8 @@
 - `scripts/validate_platforms.py` no longer requires the July values at the top level. It requires the snapshot to exist, to be complete and to be unchanged (a content hash), and its maturity to equal the latest correction's `previousMaturity`. Every field of `current` must equal the latest correction. A `current` that claims GREEN, `met`, `evidenced` or M3 and above without the correction's support is RED. Mixing the fields of the snapshot and of `current` is RED by name. The `KNOWN INCONSISTENCY` line is no longer printed, and the last lines are read from `current`.
 - The three required phrases that made `platforms/design/ROADMAP.md` quote what was corrected were removed from the validator. The roadmap's text was not changed.
 - `scripts/test_validate_platforms.py`: 112 tests. Every new or changed rule was weakened once: 42 mutants, and for each at least one test went red.
-- The status of `CR-0012` became `implementing`, and one approval was recorded whose evidence is the Owner's merge of pull request #33 (merge commit `391ff55`, 2026-10-09). The change request is not closed: this change completes it and is approved only by the merge of its own pull request. This entry claims no approval.
-- In `DECISIONS.md` the last sentence of the 2026-10-09 note under `D-009` now states the fact: the Owner merged pull request #32 (merge commit `b24de94`). The rest of the note is unchanged. Item 5 of `NEXT_CHAT_HANDOFF.md` was updated.
+- The status of `CR-0012` became `implementing`, and one approval was recorded whose evidence is the Owner's merge of pull request #33 (merge commit `30e1b96`, 2026-10-09). The change request is not closed: this change completes it and is approved only by the merge of its own pull request. This entry claims no approval.
+- In `DECISIONS.md` the last sentence of the 2026-10-09 note under `D-009` now states the fact: the Owner merged pull request #32 (merge commit `b3f60f0`). The rest of the note is unchanged. Item 5 of `NEXT_CHAT_HANDOFF.md` was updated.
 - Limits: the checks were made in a local clone without network access, so nothing was read from GitHub, and this change has not yet run in GitHub Actions. `ECOSYSTEM_ARCHITECTURE.md` and item 7 of `NEXT_CHAT_HANDOFF.md` still say that the note under `D-009` has no approval; they were not changed.
 
 ## 2026-10-09 — Root and Foundation status statements synchronized
@@ -105,7 +119,7 @@
 - `foundation/README.md`-ի `Current gate` բաժինը այլևս չի նշում 2026-07-ի workflow run `#9`-ը որպես ընթացիկ evidence, այլ մեջբերում է validator-ի 2026-10-09-ի local output-ը։ `foundation/PROJECT_CONTEXT.md`-ը այլևս չի մեջբերում տող, որը validator-ը չի տպում։
 - `DECISIONS.md`-ում `D-009`-ի տակ ավելացվեց 2026-10-09-ի երկլեզու նշում՝ քայլերի հերթականությունը և «GitHub գնում է միայն հաստատված…» նախադասությունը մասամբ փոխարինված են `D-020`-ով։ `D-009`-ի տեքստը և status-ը չեն փոխվել։ Նույն հղումը ավելացվեց `ECOSYSTEM_ARCHITECTURE.md`-ին, որը կրկնում է այդ workflow-ը։
 - `ECOSYSTEM_ARCHITECTURE.md`-ը ստացավ metadata header՝ Owner, canonical path, related decisions, last synchronized։ `Status`, `Version`, `Document class` և `Review trigger` դաշտերը չեն լրացվել, քանի որ դրանք որոշող գրառում չկա։
-- `release/FOUNDATION_V1_RELEASE_README.md`-ը այժմ գրում է ստուգված փաստերը՝ `foundation-v1.0.0` tag-ը ցույց է տալիս նույն `3793b3c` commit-ը (2026-10-07), ինչ `design-platform-v0.1.0-next.0`-ը, և snapshot-ը ամբողջ repository-ն է։
+- `release/FOUNDATION_V1_RELEASE_README.md`-ը այժմ գրում է ստուգված փաստերը՝ `foundation-v1.0.0` tag-ը ցույց է տալիս նույն `a857c5d` commit-ը (2026-10-07), ինչ `design-platform-v0.1.0-next.0`-ը, և snapshot-ը ամբողջ repository-ն է։
 - `DECISION_INDEX.md`-ի `D-028` տողի հայերեն կեսը գրում էր `Proposed`, անգլերենը՝ `Approved`․ հայերենը ուղղվեց։
 - Սահմաններ․ ստուգումները կատարվել են local clone-ում առանց ցանցի, ուստի ոչ մի GitHub Actions run, Release էջ կամ asset չի կարդացվել։ `platforms/`, `scripts/` և `.github/` directory-ներում ոչինչ չի փոխվել։ `MARKDOWN_INVENTORY.json`-ը վերագեներացվեց։
 
@@ -120,7 +134,7 @@
 - The `Current gate` section of `foundation/README.md` no longer names workflow run `#9` of July 2026 as the current evidence; it quotes the validator's local output of 2026-10-09. `foundation/PROJECT_CONTEXT.md` no longer quotes a line the validator does not print.
 - In `DECISIONS.md` a bilingual note dated 2026-10-09 was added under `D-009`: the order of the steps and the sentence “Only approved architecture and decisions enter GitHub” are superseded in part by `D-020`. The text and the status of `D-009` are unchanged. The same pointer was added to `ECOSYSTEM_ARCHITECTURE.md`, which repeats that workflow.
 - `ECOSYSTEM_ARCHITECTURE.md` received a metadata header: Owner, canonical path, related decisions, last synchronized. The fields `Status`, `Version`, `Document class` and `Review trigger` were not filled in, because no record determines them.
-- `release/FOUNDATION_V1_RELEASE_README.md` now states the checked facts: the tag `foundation-v1.0.0` points at the same commit `3793b3c` (2026-10-07) as `design-platform-v0.1.0-next.0`, and the snapshot is the whole repository.
+- `release/FOUNDATION_V1_RELEASE_README.md` now states the checked facts: the tag `foundation-v1.0.0` points at the same commit `a857c5d` (2026-10-07) as `design-platform-v0.1.0-next.0`, and the snapshot is the whole repository.
 - The Armenian half of the `D-028` line of `DECISION_INDEX.md` read `Proposed` while the English half read `Approved`; the Armenian was corrected.
 - Limits: the checks were made in a local clone without network access, so no GitHub Actions run, Release page or asset was read. Nothing was changed in the `platforms/`, `scripts/` or `.github/` directories. `MARKDOWN_INVENTORY.json` was regenerated.
 
@@ -153,19 +167,19 @@
 
 ### Հայերեն
 
-- Owner-ը 2026-10-09-ին `menqstudio` հաշվից merge արեց pull request #29-ը (merge commit `ed91149`)․ դա `D-028`-ի հաստատումն է։ `D-028`-ի status-ը դարձավ `Approved`, ոչ `Locked`։ `CANONICAL_SESSION_READ_LAW.md` v2-ը ուժի մեջ է։
+- Owner-ը 2026-10-09-ին `menqstudio` հաշվից merge արեց pull request #29-ը (merge commit `2bbd483`)․ դա `D-028`-ի հաստատումն է։ `D-028`-ի status-ը դարձավ `Approved`, ոչ `Locked`։ `CANONICAL_SESSION_READ_LAW.md` v2-ը ուժի մեջ է։
 - Այն փաստաթղթերը, որոնք `D-028`-ը անվանում էին առաջարկված, այժմ նշում են հաստատումը և pull request-ի համարը։ Ներքևի «D-028 proposed» գրառումը մնում է անփոփոխ՝ որպես այն, ինչ ճիշտ էր գրելու պահին։
 
 ### English
 
-- On 2026-10-09 the Owner merged pull request #29 from the `menqstudio` account (merge commit `ed91149`); that is the approval of `D-028`. The status of `D-028` became `Approved`, not `Locked`. `CANONICAL_SESSION_READ_LAW.md` v2 is in force.
+- On 2026-10-09 the Owner merged pull request #29 from the `menqstudio` account (merge commit `2bbd483`); that is the approval of `D-028`. The status of `D-028` became `Approved`, not `Locked`. `CANONICAL_SESSION_READ_LAW.md` v2 is in force.
 - The documents that called `D-028` proposed now state the approval and the pull request number. The “D-028 proposed” entry below stays unchanged, as what was true when it was written.
 
 ## 2026-10-09 — D-028 proposed: bounded session read
 
 ### Հայերեն
 
-- Ավելացվեց `D-028` Bounded Session Read Law-ը՝ status-ը `Proposed`։ Հաստատումը Owner-ի կողմից նրա pull request-ի merge-ն է․ այս գրառումը հաստատում չի հայտարարում։ D-028-ը մասամբ փոխարինում է `D-026`-ը․ «բոլոր tracked `.md` ֆայլերը» (133 ֆայլ, 684,725 բայթ `c61608a`-ում, առանց վերին սահմանի) պահանջի փոխարեն պարտադիր ընթերցումը դառնում է սահմանափակ core՝ 120,000 բայթից ոչ ավելի, իսկ մնացածը կարդացվում է ըստ directory-ի area-ի։
+- Ավելացվեց `D-028` Bounded Session Read Law-ը՝ status-ը `Proposed`։ Հաստատումը Owner-ի կողմից նրա pull request-ի merge-ն է․ այս գրառումը հաստատում չի հայտարարում։ D-028-ը մասամբ փոխարինում է `D-026`-ը․ «բոլոր tracked `.md` ֆայլերը» (133 ֆայլ, 684,725 բայթ `c4f50c3`-ում, առանց վերին սահմանի) պահանջի փոխարեն պարտադիր ընթերցումը դառնում է սահմանափակ core՝ 120,000 բայթից ոչ ավելի, իսկ մնացածը կարդացվում է ըստ directory-ի area-ի։
 - Ավելացվեց `foundation/ai-collaboration/SESSION_READ_MANIFEST.json`՝ core-ի 10 ֆայլ (107,705 բայթ այս draft-ում) per-file սահմաններով և 65 area։
 - Ավելացվեց `scripts/check_session_read_budget.py` gate-ը և նրա թեստերը․ gate-ը RED է, երբ manifest-ը բացակայում կամ անվավեր է, core ֆայլը բացակայում է կամ գերազանցում է իր սահմանը, core-ի ընդհանուր չափը կամ per-file սահմանների գումարը գերազանցում է budget-ը, path-ը կրկնվում է, area-ն նշում է գոյություն չունեցող directory կամ ֆայլ, կամ tracked Markdown ֆայլը հասանելի չէ ո՛չ core-ից, ո՛չ որևէ area-ից։ Բայթերը հաշվվում են CRLF-ը LF դարձնելուց հետո։ Gate-ը ավելացվեց `Markdown Inventory Integrity` workflow-ին։
 - `CANONICAL_SESSION_READ_LAW.md`-ը դարձավ v2՝ core և area կանոնով։ Այն հստակ ասում է, որ receipt-ը ապացուցում է core-ի փոխանցումը տվյալ content hash-ով, բայց ոչ հասկանալը, և որ ոչ մի ծրագիր չի ստուգում session-ի ընթերցումը։ Հեռացվեցին §2, §3, §5, §6 և §10 բաժինների կրկնվող կրճատ անգլերեն պարբերությունները, որոնք կրկնում էին հին կանոնը։
@@ -175,7 +189,7 @@
 
 ### English
 
-- Added `D-028` Bounded Session Read Law with status `Proposed`. The approval is the Owner's merge of its pull request; this entry claims no approval. D-028 supersedes `D-026` in part: instead of “every tracked `.md` file” (133 files and 684,725 bytes at `c61608a`, with no upper bound), the mandatory read becomes a bounded core of at most 120,000 bytes, and everything else is read by the area of a directory.
+- Added `D-028` Bounded Session Read Law with status `Proposed`. The approval is the Owner's merge of its pull request; this entry claims no approval. D-028 supersedes `D-026` in part: instead of “every tracked `.md` file” (133 files and 684,725 bytes at `c4f50c3`, with no upper bound), the mandatory read becomes a bounded core of at most 120,000 bytes, and everything else is read by the area of a directory.
 - Added `foundation/ai-collaboration/SESSION_READ_MANIFEST.json`: 10 core files (107,705 bytes in this draft) with per-file ceilings, and 65 areas.
 - Added the `scripts/check_session_read_budget.py` gate and its tests. The gate is RED when the manifest is missing or malformed, a core file is absent or exceeds its ceiling, the core total or the sum of the per-file ceilings exceeds the budget, a path is listed twice, an area names a directory or file that does not exist, or a tracked Markdown file is reachable from neither the core nor any area. Bytes are counted after CRLF is folded to LF. The gate was added to the `Markdown Inventory Integrity` workflow.
 - `CANONICAL_SESSION_READ_LAW.md` became v2 with the core and area rule. It states plainly that a receipt proves delivery of the core at a given content hash but not comprehension, and that no program checks a session's read. Removed the duplicate condensed English paragraphs of §2, §3, §5, §6 and §10, which restated the old rule.

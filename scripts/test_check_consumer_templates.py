@@ -153,7 +153,7 @@ class Pinning(Case):
     def test_placeholder_on_another_action(self) -> None:
         self.mutated(
             UPDATE, CHECKOUT, "      - uses: actions/checkout@__MENQ_STANDARD_COMMIT__\n",
-            f"{UPDATE}: the commit placeholder may pin only menqstudio/MenQ-Standard/.github/workflows/consumer-conformance.yml, not actions/checkout@__MENQ_STANDARD_COMMIT__",
+            f"{UPDATE}: the commit placeholder may pin only menq-official/standard/.github/workflows/consumer-conformance.yml, not actions/checkout@__MENQ_STANDARD_COMMIT__",
         )
 
     def test_reusable_workflow_called_on_a_branch(self) -> None:

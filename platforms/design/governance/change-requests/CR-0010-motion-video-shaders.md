@@ -20,7 +20,7 @@
   "evidencePlan": "Brand expression validator GREEN; Chromium test: Reveal reaches opacity 1 after entering the viewport, power-on ends with the ring fully drawn, reduced motion shows final state with no animation; axe 0 violations light and dark.",
   "targetRelease": "none (brand expression layer)",
   "pullRequests": [27],
-  "mergeEvidence": ["PR #27 merged at 8d1b0ab on 2026-10-08 01:40 +04:00 (2026-10-07 21:40 UTC)"],
+  "mergeEvidence": ["PR #27 merged at 2844986 on 2026-10-08 01:40 +04:00 (2026-10-07 21:40 UTC)"],
   "closure": null,
   "closureBlockedBy": ["evidencePlan: no Chromium test result (Reveal reaching opacity 1, the power-on end state, reduced motion) and no axe result is recorded in this repository", "consumerEvidencePlan (required for class contract-extension): no record of the Chromium render with normal and reduced motion"]
 }
@@ -50,7 +50,7 @@ Motion գրադարան (Framer Motion և այլն)՝ մերժվեց. CSS keyfra
 
 ### Փակման վիճակ (2026-10-09, CR-0012)
 
-Բաց է։ Աշխատանքը merge է եղել (PR #27՝ `8d1b0ab`), և `validate_brand_expression.py`-ը GREEN է (2026-10-09)։ Փակմանը խանգարում է. repository-ում գրանցված չէ ոչ Chromium test-ի արդյունք (Reveal-ի opacity 1, power-on-ի վերջնական վիճակ, reduced motion), ոչ axe արդյունք։
+Բաց է։ Աշխատանքը merge է եղել (PR #27՝ `2844986`), և `validate_brand_expression.py`-ը GREEN է (2026-10-09)։ Փակմանը խանգարում է. repository-ում գրանցված չէ ոչ Chromium test-ի արդյունք (Reveal-ի opacity 1, power-on-ի վերջնական վիճակ, reduced motion), ոչ axe արդյունք։
 
 ## English
 
@@ -76,6 +76,6 @@ Additions only. Rollback: revert the PR.
 
 ### Closure status (2026-10-09, CR-0012)
 
-Open. The work is merged (PR #27 at `8d1b0ab`) and `validate_brand_expression.py` is GREEN (2026-10-09). Closure is blocked because no Chromium test result (Reveal reaching opacity 1, the power-on end state, reduced motion) and no axe result is recorded in the repository.
+Open. The work is merged (PR #27 at `2844986`) and `validate_brand_expression.py` is GREEN (2026-10-09). Closure is blocked because no Chromium test result (Reveal reaching opacity 1, the power-on end state, reduced motion) and no axe result is recorded in the repository.
 
 <!-- END: CR-0010 -->

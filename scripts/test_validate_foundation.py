@@ -470,7 +470,7 @@ class YamlSubset(unittest.TestCase):
             "on:\n  workflow_call:\n    inputs:\n      pin:\n        description: \"Path of the pin\"\n"
             "        required: false\n        type: string\n        default: .menq-standard.json\n"
             "    secrets:\n      token:\n        required: false\n"
-            "jobs:\n  call:\n    uses: menqstudio/MenQ-Standard/.github/workflows/consumer-conformance.yml@" + "a" * 40 + "\n"
+            "jobs:\n  call:\n    uses: menq-official/standard/.github/workflows/consumer-conformance.yml@" + "a" * 40 + "\n"
             "    with:\n      pin: ${{ inputs.pin }}\n"
         )
         tree = vf.parse_workflow_yaml(text)

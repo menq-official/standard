@@ -16,7 +16,7 @@
 
 ### Ուղղում
 
-1. **Մշտական release evidence։** Preview bundle-ը վերակառուցվեց deterministic կրկնակի build-ով և հրապարակվեց որպես մշտական GitHub pre-release՝ [`design-platform-v0.1.0-next.0`](https://github.com/menqstudio/MenQ-Standard/releases/tag/design-platform-v0.1.0-next.0), commit `3793b3ce01a98db051894917595624881972adad`, asset `menq-design-platform-0.1.0-next.0.zip`, SHA-256 `396653856650dc2ec50af230e851e4c90f4215606be1cbec999a3b5d4a83e486`։ Այն byte-for-byte նույնը չէ ժամկետանց artifact-ի հետ, քանի որ կառուցված է ավելի ուշ commit-ից։
+1. **Մշտական release evidence։** Preview bundle-ը վերակառուցվեց deterministic կրկնակի build-ով և հրապարակվեց որպես մշտական GitHub pre-release՝ [`design-platform-v0.1.0-next.0`](https://github.com/menq-official/standard/releases/tag/design-platform-v0.1.0-next.0), commit `3793b3ce01a98db051894917595624881972adad`, asset `menq-design-platform-0.1.0-next.0.zip`, SHA-256 `396653856650dc2ec50af230e851e4c90f4215606be1cbec999a3b5d4a83e486`։ Այն byte-for-byte նույնը չէ ժամկետանց artifact-ի հետ, քանի որ կառուցված է ավելի ուշ commit-ից։
 2. **Consumer-ների վերագնահատում։** Երկու consumer-ն էլ վերագնահատվում են **M2 — Pilot**՝ իրական սահմանափակ flow, որը preview build-ը օգտագործում է public API-ով։ M3/M4 պնդումները պատմական են և այլևս որպես evidence չեն օգտագործվում։
 3. **Բաց պարտավորություն։** D-025-ը մնում է `Locked`՝ Owner-ի որոշմամբ։ Two-real-consumer պայմանը վերականգնելու համար MenQ Webpage-ը (`menqstudio/Webpage`) դառնում է առաջին իրական consumer-ը՝ անկախ, չհայտարարված evidence-ով։ Երկրորդ իրական consumer-ը ընտրում է Owner-ը։
 4. **Պատմությունը պահպանվում է։** Lock, closure և final audit գրառումները չեն վերագրվում. դրանք ստանում են ուղղման ծանուցում, իսկ readiness record-ը ստանում է `evidenceCorrections` բաժին։
@@ -30,7 +30,7 @@
 
 ### Correction
 
-1. **Permanent release evidence.** The preview bundle was rebuilt with a deterministic double build and published as a permanent GitHub pre-release: [`design-platform-v0.1.0-next.0`](https://github.com/menqstudio/MenQ-Standard/releases/tag/design-platform-v0.1.0-next.0), commit `3793b3ce01a98db051894917595624881972adad`, asset `menq-design-platform-0.1.0-next.0.zip`, SHA-256 `396653856650dc2ec50af230e851e4c90f4215606be1cbec999a3b5d4a83e486`. It is not byte-identical to the expired artifact because it was built from a later commit.
+1. **Permanent release evidence.** The preview bundle was rebuilt with a deterministic double build and published as a permanent GitHub pre-release: [`design-platform-v0.1.0-next.0`](https://github.com/menq-official/standard/releases/tag/design-platform-v0.1.0-next.0), commit `3793b3ce01a98db051894917595624881972adad`, asset `menq-design-platform-0.1.0-next.0.zip`, SHA-256 `396653856650dc2ec50af230e851e4c90f4215606be1cbec999a3b5d4a83e486`. It is not byte-identical to the expired artifact because it was built from a later commit.
 2. **Consumer re-grade.** Both consumers are re-graded to **M2 — Pilot**: a real bounded flow that uses the preview build through the public API. The M3/M4 claims are historical and are no longer used as evidence.
 3. **Open obligation.** D-025 remains `Locked` by Owner decision. To restore the two-real-consumer condition, MenQ Webpage (`menqstudio/Webpage`) becomes the first real consumer, with independent, non-self-declared evidence. The Owner selects the second real consumer.
 4. **History is preserved.** The lock, closure and final-audit records are not rewritten; they receive a correction notice, and the readiness record receives an `evidenceCorrections` section.

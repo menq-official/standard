@@ -24,7 +24,7 @@
   "evidencePlan": "build_brand_tokens.py --check covers the new output; brand expression and governance validators GREEN.",
   "targetRelease": "none (brand expression layer)",
   "pullRequests": [18, 19],
-  "closure": {"date": "2026-10-08", "evidence": ["PR #18 merged at 493a3df with all CI checks GREEN", "menqstudio/webpage PR #2 vendors tokens.vars.css pinned to 493a3df (SHA-256 1e377a93…f3d7)", "Webpage CI run 37680568760 GREEN: token parity 1632/1632 in 8 contexts; runtime evidence 14 page×theme checks; axe 0 critical"]}
+  "closure": {"date": "2026-10-08", "evidence": ["PR #18 merged at bfd0219 with all CI checks GREEN", "menqstudio/webpage PR #2 vendors tokens.vars.css pinned to bfd0219 (SHA-256 1e377a93…f3d7)", "Webpage CI run 37680568760 GREEN: token parity 1632/1632 in 8 contexts; runtime evidence 14 page×theme checks; axe 0 critical"]}
 }
 ```
 

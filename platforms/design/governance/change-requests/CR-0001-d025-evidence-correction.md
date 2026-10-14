@@ -26,7 +26,7 @@
   "evidencePlan": "Platforms validator requires the evidence correction; preview-release pipeline GREEN with M2 pilots; permanent release design-platform-v0.1.0-next.0.",
   "targetRelease": "design-platform-v0.1.0-next.0",
   "pullRequests": [15],
-  "closure": {"date": "2026-10-07", "evidence": ["PR #15 merged at 7da80a9", "CI GREEN: Platforms Integrity, Phase A, Preview Release, Foundation, Markdown Inventory", "Permanent release design-platform-v0.1.0-next.0"]}
+  "closure": {"date": "2026-10-07", "evidence": ["PR #15 merged at cc10751", "CI GREEN: Platforms Integrity, Phase A, Preview Release, Foundation, Markdown Inventory", "Permanent release design-platform-v0.1.0-next.0"]}
 }
 ```
 

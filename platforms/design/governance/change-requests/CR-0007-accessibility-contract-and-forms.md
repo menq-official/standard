@@ -20,7 +20,7 @@
   "evidencePlan": "validate_brand_expression.py GREEN incl. 34 WCAG contrast checks (negative-tested); Chromium render + axe 0 violations, light and dark.",
   "targetRelease": "none (brand expression layer)",
   "pullRequests": [24],
-  "mergeEvidence": ["PR #24 merged at cd25a7b on 2026-10-08 01:21 +04:00 (2026-10-07 21:21 UTC)"],
+  "mergeEvidence": ["PR #24 merged at e8960ea on 2026-10-08 01:21 +04:00 (2026-10-07 21:21 UTC)"],
   "closure": null,
   "closureBlockedBy": ["evidencePlan: no Chromium render and no axe result, light or dark, is recorded in this repository", "evidencePlan ('negative-tested'): no test of the 34 contrast checks is in the repository; scripts/ holds tests for the foundation, platforms, inventory and read-budget gates only", "consumerEvidencePlan (required for class contract-extension): no axe result for the components, and nothing shows that MenQ Webpage adopted FormRow or Checkbox"]
 }
@@ -50,7 +50,7 @@ FormRow-ը հիմա պահանջում է ճիշտ մեկ child control։ Rollba
 
 ### Փակման վիճակ (2026-10-09, CR-0012)
 
-Բաց է։ Աշխատանքը merge է եղել (PR #24՝ `cd25a7b`), և `validate_brand_expression.py`-ը GREEN է՝ 34 contrast ստուգումով (2026-10-09)։ Փակմանը խանգարում է. (1) repository-ում գրանցված չէ ոչ Chromium render, ոչ axe արդյունք՝ light կամ dark, (2) 34 contrast ստուգման negative test repository-ում չկա, (3) կոմպոնենտների axe արդյունք չկա, և ոչինչ ցույց չի տալիս, որ MenQ Webpage-ը ընդունել է FormRow-ը կամ Checkbox-ը։
+Բաց է։ Աշխատանքը merge է եղել (PR #24՝ `e8960ea`), և `validate_brand_expression.py`-ը GREEN է՝ 34 contrast ստուգումով (2026-10-09)։ Փակմանը խանգարում է. (1) repository-ում գրանցված չէ ոչ Chromium render, ոչ axe արդյունք՝ light կամ dark, (2) 34 contrast ստուգման negative test repository-ում չկա, (3) կոմպոնենտների axe արդյունք չկա, և ոչինչ ցույց չի տալիս, որ MenQ Webpage-ը ընդունել է FormRow-ը կամ Checkbox-ը։
 
 ## English
 
@@ -76,6 +76,6 @@ FormRow now requires exactly one child control. Rollback: revert the PR.
 
 ### Closure status (2026-10-09, CR-0012)
 
-Open. The work is merged (PR #24 at `cd25a7b`) and `validate_brand_expression.py` is GREEN with its 34 contrast checks (2026-10-09). Closure is blocked by: (1) no Chromium render and no axe result, light or dark, is recorded in the repository; (2) no negative test of the 34 contrast checks is in the repository; (3) there is no axe result for the components, and nothing shows that MenQ Webpage adopted FormRow or Checkbox.
+Open. The work is merged (PR #24 at `e8960ea`) and `validate_brand_expression.py` is GREEN with its 34 contrast checks (2026-10-09). Closure is blocked by: (1) no Chromium render and no axe result, light or dark, is recorded in the repository; (2) no negative test of the 34 contrast checks is in the repository; (3) there is no axe result for the components, and nothing shows that MenQ Webpage adopted FormRow or Checkbox.
 
 <!-- END: CR-0007 -->

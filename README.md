@@ -8,7 +8,7 @@
 | **What it is** | The operating standard of the MenQ ecosystem: how we think, decide, design, build, validate and document |
 | **Who it serves** | Every MenQ Studio product and the people and AI sessions that build them |
 | **State** | Foundation v1 and the D-025 Design Platform are Locked; the D-027 brand layer is active (see Status below) |
-| **Built with** | Markdown and JSON specifications, Python validators, GitHub Actions |
+| **Stack** | Markdown and JSON specifications, Python validators, GitHub Actions |
 
 <details><summary><b>Հայերեն</b></summary>
 
@@ -17,7 +17,7 @@
 | **Ինչ է** | MenQ էկոհամակարգի գործառնական ստանդարտը. ինչպես ենք մտածում, որոշում, նախագծում, կառուցում, ստուգում և փաստաթղթավորում |
 | **Ում համար** | MenQ Studio-ի ամեն արտադրանքի և դրանք կառուցող մարդկանց ու AI session-ների |
 | **Վիճակ** | Foundation v1-ը և D-025 Design Platform-ը Locked են. D-027 բրենդի շերտը գործում է (տես ներքևի Status-ը) |
-| **Կառուցված է** | Markdown և JSON սպեցիֆիկացիաներ, Python ստուգիչներ, GitHub Actions |
+| **Տեխնոլոգիաներ** | Markdown և JSON սպեցիֆիկացիաներ, Python ստուգիչներ, GitHub Actions |
 
 </details>
 
@@ -45,15 +45,15 @@
 
 - **Foundation v1:** Locked and GREEN / Locked և GREEN
 - **D-024 Platforms Architecture v1:** Locked / Locked (2026-10-07)
-- **Foundation v1.0.0 release:** [`foundation-v1.0.0`](https://github.com/menqstudio/MenQ-Standard/releases/tag/foundation-v1.0.0)
+- **Foundation v1.0.0 release:** [`foundation-v1.0.0`](https://github.com/menq-official/standard/releases/tag/foundation-v1.0.0)
 - **D-025 MenQ Design Platform Architecture v1:** Locked; in-repo consumers are M2 pilots, real-consumer obligation open / Locked. repo-ի ներսի consumer-ները M2 pilot են, իրական consumer-ի պարտավորությունը բաց է
 - **D-027 MenQ Brand Expression Layer v1:** Approved — Implementing / Approved — Implementing
 - **D-026 Canonical Session Read Law:** Locked; superseded in part by D-028. CI checks the Markdown inventory, not any session's read / Locked. մասամբ փոխարինված է D-028-ով։ CI-ը ստուգում է Markdown inventory-ն, ոչ թե որևէ session-ի ընթերցումը
 - **D-028 Bounded Session Read Law:** Approved (approved; the Owner merged pull request #29 on 2026-10-09). A CI gate holds the session-read core to 120,000 bytes / Approved (հաստատված. Owner-ը merge է արել pull request #29-ը 2026-10-09-ին)։ CI gate-ը session-read core-ը պահում է 120,000 բայթի սահմանում
-- **D-025 implementation merge:** `2682c99cdcbb058b66ab0cd4ee82d923e5c2a7cc`
-- **D-025 closure merge:** `9a833339b1d707d6cd8a792e031dd8ca2857d556`
-- **D-025 lock merge:** `261f85e5b20d726a0ab1f05da84a4dc45a248873`
-- **D-025 validated lock head:** `8ba2e987ff6dab2c25fda18744c7376953d0108f`
+- **D-025 implementation merge:** `32ddc2191bf50f78c4bef13a4b8b06cafc8e35a2`
+- **D-025 closure merge:** `a9932dc1b982982e144e8addd3f7fabe37e220d4`
+- **D-025 lock merge:** `c477d6bca049617e0d9df703ad5791a047e2b0da`
+- **D-025 validated lock head:** `67fad5b119e8cc48b808778c7513ee28a631ca8d`
 - **D-025 lock date:** 2026-07-13
 - **Owner:** MenQ
 - **Languages:** Armenian + English

@@ -6,13 +6,13 @@
 
 ### Հայերեն
 
-- `CR-0012`-ը փակված է. Owner-ը merge է արել pull request #33-ը (`391ff55`) և #34-ը (`ab22900`) 2026-10-09-ին։ Consumer-ի համար փոփոխություն չկա։
-- `CR-0013`-ը հաստատված է Owner-ի կողմից pull request #35-ի merge-ով (`f664ec3`, 2026-10-09) և `implementing` է. փակմանը պակասում է axe-ի արդյունքը և screenshot-ը։ Consumer-ը, որը բեռնում է `components/bundle.css`-ը կամ `bro.css`-ը, Light-ում տեսնում է միագույն հիմնական Button և Բրոյի avatar։
+- `CR-0012`-ը փակված է. Owner-ը merge է արել pull request #33-ը (`30e1b96`) և #34-ը (`650a609`) 2026-10-09-ին։ Consumer-ի համար փոփոխություն չկա։
+- `CR-0013`-ը հաստատված է Owner-ի կողմից pull request #35-ի merge-ով (`2eaa06a`, 2026-10-09) և `implementing` է. փակմանը պակասում է axe-ի արդյունքը և screenshot-ը։ Consumer-ը, որը բեռնում է `components/bundle.css`-ը կամ `bro.css`-ը, Light-ում տեսնում է միագույն հիմնական Button և Բրոյի avatar։
 
 ### English
 
-- `CR-0012` is closed: the Owner merged pull requests #33 (`391ff55`) and #34 (`ab22900`) on 2026-10-09. Nothing changes for a consumer.
-- `CR-0013` is approved by the Owner's merge of pull request #35 (`f664ec3`, 2026-10-09) and is `implementing`: an axe result and a screenshot are still missing for closure. A consumer that loads `components/bundle.css` or `bro.css` sees a solid primary Button and Bro avatar in Light.
+- `CR-0012` is closed: the Owner merged pull requests #33 (`30e1b96`) and #34 (`650a609`) on 2026-10-09. Nothing changes for a consumer.
+- `CR-0013` is approved by the Owner's merge of pull request #35 (`2eaa06a`, 2026-10-09) and is `implementing`: an axe result and a screenshot are still missing for closure. A consumer that loads `components/bundle.css` or `bro.css` sees a solid primary Button and Bro avatar in Light.
 
 ## 2026-10-09 — CR-0013: inverse text taken off the brand gradient in Light (proposed; in effect when merged)
 
@@ -42,7 +42,7 @@
 - **Consumer-ի համար՝ անելիք չկա։** Token, կոմպոնենտ, bundle, asset կամ build script չի փոխվել։
 - **Record-ը կարդացողի համար փոխվում է.** `implementation/release/d-025-readiness-record.json`-ը անցավ `schemaVersion` 2-ի։ `status`, `evidenceSnapshot`, `consumers`, `crossConsumerValidation`, `qualityAndAdoptionEvidence`, `finalAudit` և `remainingAction` դաշտերը այլևս top-level-ում չեն. նույն արժեքներով դրանք `snapshot2026-07-13` դաշտի տակ են։ Ընթացիկ վիճակը `current`-ում է։ `snapshotNotice`-ը հանվեց, `evidenceCorrections`-ը չի փոխվել։
 - `scripts/validate_platforms.py`-ը snapshot-ը պահում է անփոփոխ, `current`-ը՝ վերջին evidence correction-ին հավասար, և այլևս չի տպում `KNOWN INCONSISTENCY`։ `ROADMAP.md`-ի երեք պարտադիր արտահայտությունները հանվեցին validator-ից. `ROADMAP.md`-ի տեքստը չի փոխվել։
-- `CR-0012`-ի status-ը `implementing` է. գրանցված approval-ի evidence-ը Owner-ի կողմից pull request #33-ի merge-ն է (`391ff55`)։ Այն փակված չէ։ `NEXT_CHAT_HANDOFF.md`-ը և `PROJECT_CONTEXT.md`-ը թարմացվեցին ըստ դրա։
+- `CR-0012`-ի status-ը `implementing` է. գրանցված approval-ի evidence-ը Owner-ի կողմից pull request #33-ի merge-ն է (`30e1b96`)։ Այն փակված չէ։ `NEXT_CHAT_HANDOFF.md`-ը և `PROJECT_CONTEXT.md`-ը թարմացվեցին ըստ դրա։
 - Այս գրառումը հաստատում չի հայտարարում։
 
 ### English
@@ -50,7 +50,7 @@
 - **Nothing for a consumer to do.** No token, component, bundle, asset or build script changed.
 - **What changes for a reader of the record:** `implementation/release/d-025-readiness-record.json` moved to `schemaVersion` 2. The fields `status`, `evidenceSnapshot`, `consumers`, `crossConsumerValidation`, `qualityAndAdoptionEvidence`, `finalAudit` and `remainingAction` are no longer at the top level; with the same values they are under the `snapshot2026-07-13` field. The current state is in `current`. `snapshotNotice` was removed; `evidenceCorrections` is unchanged.
 - `scripts/validate_platforms.py` holds the snapshot unchanged and `current` equal to the latest evidence correction, and no longer prints `KNOWN INCONSISTENCY`. The three required phrases of `ROADMAP.md` were removed from the validator; the text of `ROADMAP.md` was not changed.
-- The status of `CR-0012` is `implementing`; the evidence of the recorded approval is the Owner's merge of pull request #33 (`391ff55`). It is not closed. `NEXT_CHAT_HANDOFF.md` and `PROJECT_CONTEXT.md` were updated to match.
+- The status of `CR-0012` is `implementing`; the evidence of the recorded approval is the Owner's merge of pull request #33 (`30e1b96`). It is not closed. `NEXT_CHAT_HANDOFF.md` and `PROJECT_CONTEXT.md` were updated to match.
 - This entry claims no approval.
 
 ## 2026-10-09 — CR-0012: Design Platform records brought to the present (proposed; in effect when merged)
@@ -73,7 +73,7 @@
 - The D-025 decision file gained a correction notice (its body is unchanged). `d-025-readiness-record.json` gained `snapshotNotice` and `current`; none of its existing fields changed.
 - **Open accessibility defect recorded:** in the light theme the primary Button puts white text on the azure → cyan gradient: 5.93:1 at the azure end and 2.43:1 at the cyan end (the rule is 4.5:1). This CR changed neither the component nor the tokens.
 
-## 2026-10-08 — CR-0011: repository front page standard v1 (PR #28, `c61608a`)
+## 2026-10-08 — CR-0011: repository front page standard v1 (PR #28, `c4f50c3`)
 
 ### Հայերեն
 
@@ -85,7 +85,7 @@
 - New: `repository-front/make_front.py` and `repository-front/README.md`. This repository's root `README.md` gained a front block, and `docs/assets/front/` gained four covers and `front.json`.
 - **Not breaking.** No brand-expression token, component or asset changed in this merge. The standard's status is Draft.
 
-## 2026-10-08 — CR-0010: motion patterns, logo power-on, video and shader rules (PR #27, `8d1b0ab`)
+## 2026-10-08 — CR-0010: motion patterns, logo power-on, video and shader rules (PR #27, `2844986`)
 
 ### Հայերեն
 
@@ -97,7 +97,7 @@
 - New tokens: `--duration-power-on` (1200ms), `--motion-stagger` (60ms), `--motion-distance-sm` (0.5rem), `--motion-distance-md` (1rem). New component: `Reveal`. `BrandMark` gained a `powerOn` prop. The `tokens.json` mirror gained a motion group and `icon-stroke`.
 - **Not breaking: additions only.** But from this commit on `components/bundle.css` uses the four new custom properties, so a consumer that pinned an older `tokens.css` or `tokens.vars.css` and takes the newer bundle must re-pin the token file too.
 
-## 2026-10-08 — CR-0009: iconography, Accordion, Nav and Tooltip (PR #26, `79b5abc`)
+## 2026-10-08 — CR-0009: iconography, Accordion, Nav and Tooltip (PR #26, `ecfaa87`)
 
 ### Հայերեն
 
@@ -109,7 +109,7 @@
 - New tokens: `--icon-size-sm` (1rem), `--icon-size-md` (1.25rem), `--icon-size-lg` (1.5rem), `--icon-stroke` (2). New components: `Icon`, `Accordion`, `Nav`, `Tooltip`. `Button` now forwards `aria-*` and `data-*` attributes.
 - **Not breaking: additions only.** The newer bundle uses the icon tokens, so re-pin the token file and the bundle together.
 
-## 2026-10-08 — CR-0008: app icon and favicon set (PR #25, `e48d230`)
+## 2026-10-08 — CR-0008: app icon and favicon set (PR #25, `5d159ae`)
 
 ### Հայերեն
 
@@ -121,7 +121,7 @@
 - New assets in `brand-expression/assets/Icons/`: `menq-icon.svg`, `menq-icon-maskable.svg`, `favicon.ico` (16/32/48), `apple-touch-icon.png` (180), `menq-icon-192.png`, `menq-icon-512.png`, `menq-icon-maskable-512.png`, with asset records.
 - **Not breaking: new files only.**
 
-## 2026-10-08 — CR-0007: accessibility contract and form components (PR #24, `cd25a7b`)
+## 2026-10-08 — CR-0007: accessibility contract and form components (PR #24, `e8960ea`)
 
 ### Հայերեն
 
@@ -137,7 +137,7 @@
 - `validate_brand_expression.py` now checks 17 text/background pairs in both themes (34 checks, ≥ 4.5:1). It does not check gradients.
 - The change request is classed `contract-extension`, not `breaking`; the classification question is open for the Owner (see `CR-0012`).
 
-## 2026-10-08 — CR-0006: primary action contrast (PR #23, `3eb4af2`)
+## 2026-10-08 — CR-0006: primary action contrast (PR #23, `b49a0a4`)
 
 ### Հայերեն
 
@@ -151,7 +151,7 @@
 - **It is a visible change.** Light primary buttons and active states are a deeper azure. A consumer pinned to an older `tokens.css` or `tokens.vars.css` keeps the old colour, on which white text is 4.09:1 (below WCAG AA), until it re-pins.
 - This does not fix the primary Button's gradient; see the 2026-10-09 entry.
 
-## 2026-10-08 — CR-0005: official BrandMark (PR #21, `51728c9`; viewBox fix PR #22, `c98e5d5`)
+## 2026-10-08 — CR-0005: official BrandMark (PR #21, `40b2da8`; viewBox fix PR #22, `6a8017d`)
 
 ### Հայերեն
 
@@ -167,7 +167,7 @@
 - `bro-avatar-1024.png` was added to the Bro extension.
 - **Not breaking in API; the look changes.** A consumer that copied the old files or pinned them by SHA-256 still shows the wrong mark and must take the files again.
 
-## 2026-10-08 — CR-0004: neon logo high-resolution master (PR #20, `dbf410e`)
+## 2026-10-08 — CR-0004: neon logo high-resolution master (PR #20, `a0c1593`)
 
 ### Հայերեն
 
@@ -179,7 +179,7 @@
 - New asset: `assets/Logos/menq-logo-neon-hires.png` (1913×720, transparent), with an asset record. `menq-logo-neon.png` stays.
 - **Not breaking: a new file only.**
 
-## 2026-10-07 — CR-0003: `tokens.vars.css` consumption artifact (PR #18, `493a3df`; closed by PR #19, `d05b785`)
+## 2026-10-07 — CR-0003: `tokens.vars.css` consumption artifact (PR #18, `bfd0219`; closed by PR #19, `491bdb9`)
 
 ### Հայերեն
 
@@ -193,7 +193,7 @@
 - **Not breaking.** `tokens.css` and `tokens.json` did not change in this merge.
 - PR #19 closed `CR-0003` and recorded MenQ Webpage's first progress entry in `d-025-readiness-record.json`.
 
-## 2026-10-07 — CR-0002: Part 14 governance implemented and Locked (PR #16, `4ee07be`; PR #17, `55d277c`)
+## 2026-10-07 — CR-0002: Part 14 governance implemented and Locked (PR #16, `e83416d`; PR #17, `d0c94cb`)
 
 ### Հայերեն
 
@@ -209,7 +209,7 @@
 - PR #17 set the lifecycle of `menq.design.spec.governance.v1` to `Locked` in the registry.
 - **Not breaking for a consumer.** No package, token or component changed.
 
-## 2026-10-07 — CR-0001: D-025 evidence correction (PR #15, `7da80a9`)
+## 2026-10-07 — CR-0001: D-025 evidence correction (PR #15, `cc10751`)
 
 ### Հայերեն
 
@@ -225,7 +225,7 @@
 - `D-025_EVIDENCE_CORRECTION_RECORD.md` was added; the lock, closure and final-audit records received a correction notice, and the readiness record an `evidenceCorrections` section. `validate_consumers.py` and the two consumers' build files changed.
 - **Not breaking.** Per the change request, the public package API did not change. D-025 remains `Locked`.
 
-## 2026-10-07 — Zero-trust audit phases 2–5 (PR #9 `ad5f013`, PR #10 `51d1261`, PR #11 `cb296a7`, PR #12 `78f86cb`)
+## 2026-10-07 — Zero-trust audit phases 2–5 (PR #9 `4d81a52`, PR #10 `64e08c9`, PR #11 `57d8561`, PR #12 `ba9242e`)
 
 ### Հայերեն
 
@@ -259,18 +259,18 @@
 - Defined Russian as a locale pack and the repository as the canonical source.
 - Added asset records, bilingual documentation, `validate_brand_expression.py` and the `design-brand-expression.yml` workflow.
 
-## 2026-07-13 — D-025 implemented, closed and Locked (PR #3 `2682c99`, PR #4 `9a83333`, PR #5 `261f85e`, final audit `277b310`)
+## 2026-07-13 — D-025 implemented, closed and Locked (PR #3 `32ddc21`, PR #4 `a9932dc`, PR #5 `c477d6b`, final audit `52216d9`)
 
 ### Հայերեն
 
 - PR #3. D-025-ի implementation-ը՝ տասը package boundary, canonical registry և schema, build script-եր, validator-ներ, երկու repository-ի ներսի consumer և private `0.1.0-next.0` preview candidate։
-- PR #4. post-merge closure record։ PR #5. Owner-ի explicit lock approval-ը 2026-07-13-ին և `D-025_LOCK_RECORD.md`-ը։ `277b310`. վերջնական post-lock audit։
+- PR #4. post-merge closure record։ PR #5. Owner-ի explicit lock approval-ը 2026-07-13-ին և `D-025_LOCK_RECORD.md`-ը։ `52216d9`. վերջնական post-lock audit։
 - **Հետագա ուղղում.** այդ օրը գրանցված consumer grade-երը (M3 և M4) և workflow artifact evidence-ը ուղղվել են 2026-10-07-ին (տես `CR-0001`-ի գրառումը վերևում)։ D-025-ը մնում է `Locked`։
 
 ### English
 
 - PR #3: the D-025 implementation — ten package boundaries, the canonical registry and schema, build scripts, validators, two in-repository consumers and the private `0.1.0-next.0` preview candidate.
-- PR #4: the post-merge closure record. PR #5: the Owner's explicit lock approval on 2026-07-13 and `D-025_LOCK_RECORD.md`. `277b310`: the final post-lock audit.
+- PR #4: the post-merge closure record. PR #5: the Owner's explicit lock approval on 2026-07-13 and `D-025_LOCK_RECORD.md`. `52216d9`: the final post-lock audit.
 - **Later correction:** the consumer grades recorded that day (M3 and M4) and the workflow-artifact evidence were corrected on 2026-10-07 (see the `CR-0001` entry above). D-025 remains `Locked`.
 
 ## 2026-07-12 — Part 16 specification index and implementation package plan

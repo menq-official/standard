@@ -102,12 +102,12 @@
 
 - `menqstudio/MenQ-Standard`-ի zero-trust audit՝ 2026-10-07-ին (findings-ը PR #7-ում)։
 - Owner approval-ը project conversation-ում՝ 2026-10-07-ին։
-- Source repositories՝ `menqstudio/Webpage@d985a57` (tokens, BrandMark), `menqstudio/BroPS@05754bd` (app components)։
+- Source repositories՝ `menqstudio/Webpage@56c991b` (tokens, BrandMark), `menqstudio/BroPS@8a11ebb` (app components)։
 
 **EN:**
 
 - Zero-trust audit of `menqstudio/MenQ-Standard` on 2026-10-07 (findings on PR #7).
 - Owner approval in the project conversation on 2026-10-07.
-- Source repositories: `menqstudio/Webpage@d985a57` (tokens, BrandMark), `menqstudio/BroPS@05754bd` (app components).
+- Source repositories: `menqstudio/Webpage@56c991b` (tokens, BrandMark), `menqstudio/BroPS@8a11ebb` (app components).
 
 <!-- END: D-027-MENQ-BRAND-EXPRESSION-LAYER-V1 -->
